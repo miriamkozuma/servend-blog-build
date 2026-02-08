@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PG4PR9NX");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{{TITLE}} | Blog Serv-End</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <link rel="canonical" href="{{CANONICAL}}" />
+
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta property="og:description" content="{{DESCRIPTION}}" />
+    <meta property="og:url" content="{{CANONICAL}}" />
+    <meta property="og:type" content="article" />
+    {{OG_IMAGE_TAG}}
+    {{JSON_LD}}
+
+    <meta
+      name="keywords"
+      content="Blog END, Artigos técnicos END, Ensaios Não Destrutivos, Dicas Partículas Magnéticas, Guia Líquidos Penetrantes, Novidades inspeção industrial, Serv-End blog"
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Favicons -->
+    <link href="img/SE_topo_pagina.png" rel="icon" />
+    <link href="img/SE_topo_pagina.png" rel="icon-servend" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main2.css" rel="stylesheet" />
+
+    <style>
+      .cc-window,
+      .cc-banner,
+      .cc-revoke {
+        display: none !important;
+      }
+    </style>
+
+    <style>
+      .hero-article {
+        position: relative;
+        background: #0b0b0b;
+        min-height: clamp(220px, 28vh, 360px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero-article .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.65)
+        );
+      }
+      .hero-article .title-wrap {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+      }
+      .hero-article .hero-badge {
+        background: #de1f26 !important;
+        color: #fff !important;
+        font-size: 1rem;
+        padding: 0.55rem 1rem;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .btn-back {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #fff !important;
+        font-weight: 600;
+      }
+      .btn-back:hover {
+        background: #e9ecef !important;
+      }
+      #post-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
+      #post-content blockquote {
+        border-left: 3px solid #de1f26;
+        padding-left: 1rem;
+        color: #ccc;
+      }
+      #post-content figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem auto;
+        text-align: center;
+      }
+      #post-content figure figcaption {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        color: #ccc;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body class="dark-background">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PG4PR9NX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header d-flex align-items-center fixed-top" id="header">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img
+            alt="Logo da empresa"
+            src="assets/img/LOGO-SERV-END.TRANSPARENTE-BRANCO.png"
+            style="max-height: 80px"
+          />
+        </a>
+
+        <nav class="navmenu" id="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="conteudosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Conteúdos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="conteudosDropdown">
+                <!-- Ideal: trocar para /blog/ quando você tiver o índice novo -->
+                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="contents.html"
+                    >Materiais para Download</a
+                  >
+                </li>
+                <li class="dropdown submenu-hover submenu-open-left">
+                  <a class="dropdown-item dropdown-toggle" href="#"
+                    >Métodos de inspeção</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="metodo-particulas-magneticas.html"
+                        >Partículas Magnéticas</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="metodo-liquidos-penetrantes.html"
+                        >Líquidos Penetrantes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form
+            class="d-flex ms-3"
+            role="search"
+            action="search.html"
+            method="get"
+          >
+            <input
+              class="form-control form-control-sm me-2"
+              type="search"
+              name="q"
+              placeholder="Buscar..."
+              aria-label="Buscar"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </nav>
+
+        <button
+          class="mobile-nav-toggle d-xl-none"
+          type="button"
+          aria-label="Abrir menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background position-relative"
+        style="background-color: black"
+      >
+        <div class="container position-relative">
+          <h1>Blog</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Conteúdos / Blog / Artigos</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Hero (sem imagem) -->
+      <section class="hero-article">
+        <div class="overlay"></div>
+        <div class="container text-center title-wrap">
+          <div class="d-flex justify-content-center mb-3">
+            <span class="badge rounded-pill hero-badge">{{CATEGORY}}</span>
+          </div>
+
+          <h1 class="display-6 fw-bold text-white mb-3">{{TITLE}}</h1>
+
+          <p class="text-white-50 mb-3">
+            Publicado em {{DATE_BR}} · {{READ_TIME}} de leitura
+          </p>
+
+          <!-- Ideal: trocar para /blog/ quando você tiver o índice novo -->
+          <a href="blog.html" class="btn btn-sm btn-back">
+            <i class="bi bi-arrow-left me-1"></i> Voltar ao Blog
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="article">
+        <div class="container">
+          <article class="blog-details py-4" id="post-content">
+            {{CONTENT}}
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Seu footer (mantido como você tinha) -->
+    <footer class="footer position-relative dark-background" id="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a class="logo d-flex align-items-center" href="index.html">
+              <img
+                alt="Logo da empresa"
+                src="assets/img/LOGO_SERVEND.svg"
+                style="max-height: 45px"
+              />
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Rua Prudente de Moraes, 580</p>
+              <p>Jd. Alvorada - Diadema - SP</p>
+              <p class="mt-3">CEP 09960-500<span></span></p>
+              <p><strong>Tels:</strong> <span>+ 55 (11) 4066-5312</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="https://web.facebook.com/servend.industria#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/servendindustria/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/serv-end-industria-e-comercio/posts/?feedView=all"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/@servend9200"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="services.html">Serviços</a></li>
+              <li><a href="products.html">Produtos</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Categoria de Produtos</h4>
+            <ul>
+              <li><a class="btn-footer" href="products.html?categoria=maquinas">Máquinas</a></li>
+              <li>
+                <a class="btn-footer" href="products.html?categoria=desmagnetizadores"
+                  >Desmagnetizadores</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn-footer"
+                  href="products.html?categoria=aparelhos-portateis-magnafluxo-yoke"
+                  >Aparelhos portáteis</a
+                >
+              </li>
+              <li>
+                <a class="btn-footer" href="products.html?categoria=liquidos-penetrantes"
+                  >Líquidos penetrantes</a
+                >
+              </li>
+              <li>
+                <a class="btn-footer" href="products.html?categoria=particulas-magneticas"
+                  >Partículas magnéticas</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn-footer"
+                  href="products.html?categoria=acessorios-inspecao-particulas-magneticas-liquidos-penetrantes"
+                  >Acessórios para inspeção</a
+                >
+              </li>
+              <li><a class="btn-footer" href="products.html?categoria=cabines">Cabine de luz negra</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="services.html">Reformas</a></li>
+              <li><a href="services.html">Aplicações</a></li>
+              <li><a href="services.html">Adequações</a></li>
+              <li><a href="services.html">Assistência Técnica</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span> <b>Servend</b>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main2.js"></script>
+
+    <!-- Mantém seu fix de overflow -->
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
+        document.body.style.height = "auto";
+        document.documentElement.style.height = "auto";
+      });
+    </script>
+
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/5511940233939"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Converse conosco no WhatsApp"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <!-- ⚠️ Aqui eu REMOVI:
+         - marked.min.js
+         - parseFrontMatter()
+         - fetch(posts/${slug}.md)
+         - canonical via JS
+         Isso tudo NÃO pode existir num template estático. -->
+
+    <!-- Seu modal/cookie scripts (mantidos) -->
+    <!-- (cole aqui seu bloco do modal de cookies exatamente como está no site se você quiser no blog também) -->
+  </body>
+</html>
