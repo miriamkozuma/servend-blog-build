@@ -1,0 +1,36 @@
+name: Build Blog
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "build-blog.js"
+      - "posts/**"
+      - "templates/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install gray-matter marked
+
+      - name: Build
+        run: node build-blog.js
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-blog
+          path: dist/blog
